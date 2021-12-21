@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Text color</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+    .text{
+      font-size: 8rem;
+      letter-spacing: 0.6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: linear-gradient(to right, purple, orange);
+      /* background: url("https://images.unsplash.com/photo-1638579837195-3fb3b3287506?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"); */
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="text">Text Color</p>
+  </div>
+</body>
+</html>
